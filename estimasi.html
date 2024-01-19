@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Register</title>
+  <title>Estimasi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -61,40 +61,59 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Register</h2>
+          <h2>Estimasi</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Register</li>
+            <li>Estimasi</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container col-lg-4">
-        <div id="login-form">
-            <h2>Login</h2>
-            <form id="myForm">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Nama</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Umur</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Alamat</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-            </form>
+    <section id="faq" class="portofolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Estimasi</h2>
+          <p>Menghitung estimasi jumlah produk yang dapat diproduksi berdasarkan persediaan bahan.</p>
         </div>
-        <a href="estimasi.html">
-            <button class="btn btn-success">Register</button>
-        </a>
+        <div class="col-sm-6">
+          <div class="mb-3">
+              <strong>Persediaan Bahan</strong><br>
+              <small class="mb-1">*Input jumlah persedian bahan yang tersedia</small>
+          </div>
+          <div class="mb-3 row">
+              <label class="col-sm-3 col-form-label" for="b1"><strong>Kayu Jati</strong></label>
+              <div class="col-sm-9">
+                <input type="number" id="b1" name="b1" value="">
+              </div>
+          </div>
+          <div class="mb-3 row">
+              <label class="col-sm-3 col-form-label" for="b2"><strong>Paku Tembak</strong></label>
+              <div class="col-sm-9">
+                <input type="number" id="b2" name="b2" value="">
+              </div>
+          </div>
+          <div class="mb-4 row">
+              <label class="col-sm-3 col-form-label" for="b3"><strong>Jeruji Fiber</strong></label>
+              <div class="col-sm-9">
+                <input type="number" id="b3" name="b3" value="">
+              </div>
+          </div>
+          <div class="mb-3">
+              <button onclick="calculateRREF()" type="submit" class="btn btn-success px-3">Hitung</button>
+          </div>
       </div>
-    </section>
+      
+      <div class="">
+        <textarea id="result" rows="10" cols="100" readonly></textarea>
+      </div>
+      
+    </div>
+      
+      </div>
+    </section><!-- End Estimasi -->
 
   </main><!-- End #main -->
 
@@ -152,6 +171,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/rref.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
